@@ -20,6 +20,7 @@ install_requires = [
 
 tests_require = [
     'pytest',
+    'pytest-cov',
     'cram>=0.6',
     'mock',
     'coverage',
@@ -46,7 +47,6 @@ setup(
     url = "https://github.com/blosc/bloscpack",
     install_requires = install_requires,
     extras_require = dict(tests=tests_require),
-    tests_require = tests_require,
     classifiers = ['Development Status :: 4 - Beta',
                    'Environment :: Console',
                    'License :: OSI Approved :: MIT License',
