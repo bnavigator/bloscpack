@@ -1,7 +1,7 @@
 pytest
 pytest-cov
 cram>=0.6
-mock
+mock,python_version<3
 coveralls
 twine
 wheel

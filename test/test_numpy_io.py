@@ -4,7 +4,12 @@
 
 import numpy as np
 import numpy.testing as npt
-import mock
+
+try:
+    from unittest import mock
+except ImportError:
+    import mock
+
 import pytest
 
 

@@ -1,8 +1,11 @@
 # -*- coding: utf-8 -*-
 # vim :set ft=py:
 
+try:
+    from unittest.mock import patch, Mock
+except ImportError:
+    from mock import patch, Mock
 
-from mock import patch, Mock
 import pytest
 
 from bloscpack import cli

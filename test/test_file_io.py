@@ -7,7 +7,12 @@ from __future__ import print_function
 
 import blosc
 import pytest
-from mock import patch
+
+try:
+    from unittest.mock import patch
+except ImportError:
+    from mock import patch
+
 import numpy as np
 
 from bloscpack.args import (BloscArgs,
