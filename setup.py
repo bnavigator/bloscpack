@@ -3,7 +3,6 @@
 # flake8: noqa
 
 from setuptools import setup
-import sys
 import io
 
 with io.open('README.rst', encoding='utf-8') as f:
@@ -20,7 +19,7 @@ install_requires = [
 ]
 
 tests_require = [
-    'nose',
+    'pytest',
     'cram>=0.6',
     'mock',
     'coverage',
